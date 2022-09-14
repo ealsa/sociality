@@ -1,10 +1,13 @@
 .navbar {
-  height: 100vh;
   width: 30rem;
   display: flex;
   flex-direction: column;
-  /* position: relative; */
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.hide-navbar {
+  position: absolute;
+  transform: translateX(-30rem);
 }
 
 button {
@@ -39,10 +42,6 @@ button:hover {
 
 .button-hidden {
   left: 0;
-}
-
-.hide-navbar {
-  transform: translateX(-30rem);
 }
 
 .title {
@@ -94,7 +93,7 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-img:hover {
+label > img:hover {
   transform: scale(1.1);
 }
 
@@ -184,18 +183,18 @@ label:hover {
   padding: 2rem 2rem;
 }
 
-li {
+.list-element {
   color: #f55661;
   font-size: 1.6rem;
   font-weight: 500;
 }
 
-li:hover {
+.list-element:hover {
   color: white;
   cursor: pointer;
 }
 
-li:not(:last-child) {
+.list-element:not(:last-child) {
   padding-bottom: 2rem;
 }
 

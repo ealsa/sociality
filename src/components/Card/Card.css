@@ -1,0 +1,102 @@
+.card {
+  min-height: 40rem;
+  width: 35rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.post-link {
+  width: 12%;
+}
+
+.card-social {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.social-platform-icons {
+  color: #b5b5b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.social-platform-icons-nums {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card-content {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 0 5px 5px 0;
+  background-color: white;
+  padding: 2rem 1.8rem;
+}
+
+.card-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.card-icon-container {
+  color: #d6d6d6;
+  display: flex;
+  gap: 1rem;
+}
+
+.card-action-icons {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-action-icons:hover {
+  transform: scale(1.2);
+  color: #3ac183;
+}
+
+.card-message {
+  font-size: 1.5rem;
+  color: #a3a3a3;
+}
+
+.card-img {
+  width: 97%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-date > span {
+  color: #9f9f9f;
+}
+
+.need-approval-color {
+  background-color: #f7bf38;
+}
+
+.scheduled-color {
+  background-color: #3ac183;
+}
+
+.published-color {
+  background-color: #acacac;
+}
+
+.error-color {
+  background-color: #fb6450;
+}

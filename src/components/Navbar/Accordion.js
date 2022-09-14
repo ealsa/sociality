@@ -30,8 +30,8 @@ const Accordion = ({ Icon, title, liEl1, liEl2 }) => {
         )}
       </div>
       <div className={`content-container ${clicked ? "" : "show-list"} `}>
-        <li>{liEl1}</li>
-        <li>{liEl2}</li>
+        <li className="list-element">{liEl1}</li>
+        <li className="list-element">{liEl2}</li>
       </div>
     </div>
   );

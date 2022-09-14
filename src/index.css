@@ -11,7 +11,13 @@ html {
 }
 
 body {
-  height: 100vh;
   font-family: "Jost", sans-serif;
   font-size: 1.6rem;
+  background-color: #f5f7f8;
+}
+
+.page-container {
+  /* border: 20px solid green; */
+  min-height: 100vh;
+  display: flex;
 }

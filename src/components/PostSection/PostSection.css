@@ -1,0 +1,127 @@
+.post-container {
+  width: 100%;
+
+  padding: 1.4rem 6rem;
+}
+
+.status-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.published,
+.scheduled,
+.need-approval,
+.error,
+.notes {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 615px) {
+  .published,
+  .scheduled,
+  .need-approval,
+  .error,
+  .notes {
+    list-style: none;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .status-list {
+    gap: 1rem;
+  }
+}
+
+.published::before {
+  content: "";
+  font-weight: bold;
+  background-color: #acacac;
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+.scheduled::before {
+  content: "";
+  font-weight: bold;
+  background-color: #3ac183;
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+.need-approval::before {
+  content: "";
+  font-weight: bold;
+  background-color: #f7bf38;
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+.error::before {
+  content: "";
+  font-weight: bold;
+  background-color: #fb6450;
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+.notes::before {
+  content: "";
+  font-weight: bold;
+  background-color: #67b1f2;
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.post-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 990px) {
+  .status-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 2rem;
+    gap: 2rem;
+  }
+}
